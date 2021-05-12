@@ -1,8 +1,10 @@
-name = ""
+greeting = "hello world"
+sides = "*" * 3
 
-while name.lower() != "xxx":
-  name = input("Who are you? ")
-  print(name)
+greeting = "{} {} {}".format(sides, greeting, sides)
 
-print()
-print("We are done!")
+top_bottom = "*" * len(greeting)
+
+print(top_bottom)
+print(greeting)
+print(top_bottom)
